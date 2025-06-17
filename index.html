@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Artiom - Game Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+</head>
+<body>
+   
+    <section id="intro-screen">
+        <div class="split-text-container">
+            <span class="text-part left">WEL</span>
+            <span class="text-part right">COME</span>
+        </div>
+    </section>
+
+    <header>
+        <h1>Artiom</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Portfolio</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="card animated-box">
+            <h2>About Me</h2>
+            <p>I'm Artiom - a passionate game developer, designer, and music producer driven by storytelling and immersive world-building. Currently studying Creative Media and Game Technology, I specialize in crafting dynamic gameplay experiences through both visual and audio design. From fast-paced combat systems to emotionally resonant soundtracks, I aim to blend technical skill with creative expression. Whether it’s through game mechanics, level design, or atmospheric music, my mission is to build interactive worlds that captivate, challenge, and inspire.</p>
+            <img src="MyImage.jpg" alt="Artiom's photo" class="profile-image">
+        </section>
+
+        <div class="side-by-side-boxes">
+            <section id="skills" class="card animated-box">
+                <h2>Skills</h2>
+                <div class="skills-columns">
+                    <div>
+                        <h3>Language</h3>
+                        <ul>
+                            <li>C/C++</li>
+                            <li>C#</li>
+                            <li>HTML/CSS</li>
+                            <li>Python/JavaScript</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Engine</h3>
+                        <ul>
+                            <li>Unreal Engine 4</li>
+                            <li>Unity</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Field</h3>
+                        <ul>
+                            <li>Programming</li>
+                            <li>Character Design</li>
+                            <li>UI Design</li>
+                            <li>Concept Art</li>
+                            <li>Music Production</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Software</h3>
+                        <ul>
+                            <li>Photoshop/Premiere Pro/After Effects</li>
+                            <li>Blender</li>
+                            <li>FL Studio/Ableton</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Languages</h3>
+                        <ul>
+                            <li>English - Fluent</li>
+                            <li>Russian - Native</li>
+                            <li>Lithuanian - Native</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="card animated-box">
+                <h2>My Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <a href="Unhinged.html" class="project-link"></a>
+                        <img src="Unhinged.jpg" alt="Unhinged" />
+                        <h3>Unhinged</h3>
+                        <p>3D shooting game.</p>
+                        <p>“Game Jam Project”</p>
+                    </div>
+                    <div class="project-card">
+                        <a href="Floodaville.html" class="project-link"></a>
+                        <img src="FloodAVille.jpg" alt="FloodAVille" />
+                        <h3>FloodAVillage</h3>
+                        <p>3D flood survival game.</p>
+                        <p>“University Group Project”</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>Contact Me:</p>
+        <div class="social-icons">
+        <a href="https://x.com/GgHlg82129" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/artiom-smirnov-1264692a5/" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/MatieBal1" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.instagram.com/7_amaterasu_7/" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-instagram"></i>
+        </a>
+        </div>
+        <p>&copy; 2025 My Game Dev Portfolio</p>
+    </footer>
+
+
+<script>
+  document.body.classList.add("intro-active");
+
+  window.addEventListener("DOMContentLoaded", () => {
+    const intro = document.getElementById("intro-screen");
+
+    setTimeout(() => {
+      if (intro) {
+        intro.classList.add("fade-out");
+
+        // Fully remove it after fade
+        setTimeout(() => {
+          intro.remove();
+          document.body.classList.remove("intro-active");
+          document.body.style.height = "";
+          document.body.style.overflow = "";
+        }, 1000); // match fade time
+      }
+    }, 3000); // intro duration
+  });
+</script>
+
+</body>
+</html>
