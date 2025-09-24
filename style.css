@@ -398,8 +398,8 @@ body.intro-active {
 .audio-list {
   display: flex;
   flex-direction: column;
-  gap: 20px;
   align-items: center;       /* выравнивание всех треков по центру */
+  gap: 40px;
 }
 
 .track {
