@@ -391,25 +391,25 @@ body.intro-active {
 
 .audio-section {
   display: flex;
-  justify-content: center; /* выравнивание по горизонтали */
+  justify-content: center;   /* центрируем по горизонтали */
   width: 100%;
 }
 
 .audio-list {
   display: flex;
   flex-direction: column;
-  align-items: center; /* выравнивает каждый трек по центру */
   gap: 20px;
-  max-width: 600px; /* ограничение ширины */
+  align-items: center;       /* выравнивание всех треков по центру */
 }
 
 .track {
   width: 100%;
+  max-width: 600px;          /* ширина списка */
   background: rgba(255, 255, 255, 0.05);
   padding: 15px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  text-align: center; /* центрируем текст */
+  text-align: center;        /* текст по центру */
 }
 
 .track-title {
