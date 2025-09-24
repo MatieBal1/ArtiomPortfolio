@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MusicProjects</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+  <style>
+    body {
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: #f1f1f1;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: rgba(15, 12, 41, 0.9);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+
+    header a {
+      color: #4be1ec;
+      font-size: 18px;
+      text-decoration: none;
+      font-weight: bold;
+      background: transparent;
+      border: 2px solid #4be1ec;
+      padding: 8px 16px;
+      border-radius: 8px;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    header a:hover {
+      background: #4be1ec;
+      color: #0f0c29;
+    }
+
+    .description-box {
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 16px;
+      padding: 40px;
+      max-width: 900px;
+      margin: 40px auto;
+      box-shadow: 0 0 20px rgba(75, 225, 236, 0.2);
+    }
+
+    .description-box h2 {
+      color: #4be1ec;
+      margin-bottom: 20px;
+      font-size: 32px;
+      border-bottom: 2px solid #4be1ec;
+      padding-bottom: 5px;
+    }
+
+    .description-box p {
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    .project-images {
+      max-width: 1000px;
+      margin: 20px auto 60px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .project-images img {
+      max-width: 300px;
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .project-images img:hover {
+      transform: scale(3);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html#projects">← Back to Portfolio</a>
+  </header>
+
+  <main>
+    <div class="description-box">
+      <h2>My own path</h2>
+      <p>
+        My path in the world of music began with the music school where I learned how to play several instruments such as Guitar and piano.
+        Later on I started grinding on Fl studio where I was satisfied with the variety of instruments and effects I could use.
+        I was practising my skills and apllying music theory I've learned to create amazing stuff, however it was just a hobby.
+        And now, when I started my Bachelor I actually started getting into a sound designing and creating music compositions that fit the game experience and satisfy players.
+      </p>
+    </div>
+
+    <div class="project-music">
+        <audio controls>
+        <p><strong>Boss awakening part:</strong> Used in university project for boss awakening part.</p>
+        <source src="boss_awakening.wav" type="audio/mpeg">
+        Your browser doesn't support audio.
+        </audio>
+
+        <audio controls>
+        <p><strong>Dreamcore:</strong> I found this old composition and changed it a bit. Basically it's just to show that I can make different audio.</p>
+        <source src="Dreamcore.mp3" type="audio/mpeg">
+        Your browser doesn't support audio.
+        </audio>
+        <audio controls>
+        <p><strong>Main Menu:</strong> This composition was made for a game jam project I was participating in.</p>
+        <source src="main_menu.mp3" type="audio/mpeg">
+        Your browser doesn't support audio.
+        </audio>
+        <audio controls>
+        <p><strong>Main Menu:</strong> Used in university project for main menu.</p>
+        <source src="melody.mp3" type="audio/mpeg">
+        Your browser doesn't support audio.
+        </audio>
+        <audio controls>
+        <p><strong>Rock:</strong> This composition was made for a university project for boss fight (actually was my first experience in makikng hard rock).</p>
+        <source src="metal.mp3" type="audio/mpeg">
+        Your browser doesn't support audio.
+        </audio>
+    </div>
+  </main>
+    <footer>
+        <p>Contact Me:</p>
+        <div class="social-icons">
+        <a href="https://x.com/GgHlg82129" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/artiom-smirnov-1264692a5/" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/MatieBal1" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.instagram.com/7_amaterasu_7/" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-instagram"></i>
+        </a>
+        </div>
+        <p>&copy; 2025 My Game Dev Portfolio</p>
+    </footer>
+</body>
+</html>
