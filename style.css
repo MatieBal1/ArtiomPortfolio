@@ -389,25 +389,32 @@ body.intro-active {
   height: 100%;
 }
 
+.audio-section {
+  display: flex;
+  justify-content: center; /* выравнивание по горизонтали */
+  width: 100%;
+}
+
 .audio-list {
   display: flex;
   flex-direction: column;
-  gap: 20px; /* расстояние между дорожками */
-  max-width: 600px; /* чтобы не растягивалось слишком широко */
-  margin: 0 auto; /* выравнивание по центру */
+  align-items: center; /* выравнивает каждый трек по центру */
+  gap: 20px;
+  max-width: 600px; /* ограничение ширины */
 }
 
 .track {
+  width: 100%;
   background: rgba(255, 255, 255, 0.05);
   padding: 15px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  text-align: center; /* центрируем текст */
 }
 
 .track-title {
   margin-bottom: 8px;
   font-size: 16px;
   font-weight: 500;
-  color: #00d4ff; /* можешь заменить на свой цвет */
+  color: #00d4ff;
 }
-
